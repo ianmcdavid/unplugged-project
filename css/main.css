@@ -828,7 +828,7 @@ footer p {
       padding-bottom: 40px;
     }
 
-  /******** About *******/
+  /******** About ********************************/
   .mission .content-wrapper {
     width: 100%;
   }
@@ -853,6 +853,10 @@ footer p {
 
   }
   
+  .map figure {
+    padding-bottom: 45.57%;
+  }
+
   .contact-section .content-wrapper{
     display: flex;
     flex-flow: row wrap;
@@ -1071,6 +1075,10 @@ footer h5 {
   line-height: 1.33em;
   margin: 0;
 
+}
+
+.map figure {
+  padding-bottom: 37.5%;
 }
 
 .contact-section {
