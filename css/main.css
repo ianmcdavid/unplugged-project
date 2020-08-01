@@ -97,7 +97,57 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*--------- Base Styles Header and Footer -------------*/
+  
+  /************** General Styles **********/
+  html {
+    font-size: 16px;
+  }
+   
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+  }
+   
+  ul {
+   
+  }
+   
+  a {  
+    color: #e2e3ed;
+    text-decoration: none;
+  }
+   
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+  }
+   
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+  }
+   
+  h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+  }
+  p {
+    font-size: .875em;
+  }
+   
+  img {
+   
+  }
+   
+  figure {
+   
+  }
+   
+  address {
+   font-style: normal;
+  }
+
+   /*--------- Base Styles Header and Footer -------------*/
 header, footer {
   display: flex;
   justify-content: center;
@@ -170,7 +220,7 @@ header nav ul li {
 }
 
 .hero-area h1 {
-  padding: 55px 22px;
+  padding: 55px 0;
   margin: 0;
 }
 aside {
@@ -184,8 +234,9 @@ aside {
 
 }
 
-aside h3 {
+aside h5 {
   padding-top: 30px;
+  line-height: 1em;
 }
 
 aside p{
@@ -199,7 +250,7 @@ aside p{
   justify-content: center;
 }
 
-.form h3{
+.form h2 {
   margin: 9px 0;
 }
 aside input {
@@ -219,13 +270,14 @@ aside input {
 
 .features p {
   margin: 0;
+  line-height: 1.129em;
 }
 
 .features figure {
 
 }
 
-.features h1 {
+.features h2 {
   margin: 0;
   padding: 54px 0;
 }
@@ -263,7 +315,11 @@ aside input {
 
 }
 
-.reviews h3{
+.reviews h2 {
+  line-height: 1em;
+}
+
+.reviews h5{
   margin: 0;
   padding-top: 50px;
   width: 81%;
@@ -286,7 +342,7 @@ aside input {
 }
 
 .retreat-info p {
-
+  line-height: 1.129em;
 }
 
 /*---------Mobile Styles - About ---------*/
@@ -309,12 +365,13 @@ aside input {
   margin: 50px 0;
 }
 
-.mission-content h1 {
+.mission-content h2 {
 
 }
 
 .mission-content p {
   margin-top: 20px;
+  line-height: 1.129em;
 }
 
 .map {
@@ -343,7 +400,7 @@ aside input {
 
 }
 
-.contact-about h4 {
+.contact-about h5 {
 
 }
 
@@ -369,21 +426,22 @@ aside input {
   flex-flow: row wrap;
 }
 
-.faq h1 {
+.faq h2 {
   width: 100%;
   margin: 50px 0;
+  line-height: 1em;
 }
 
 .faq-content {
-  margin: 0 0 50px 19px;
+  margin: 0 0 50px;
 }
 
-.faq-content h3 {
-
+.faq-content h5 {
+  line-height: 1.33em;
 }
 
 .faq-content p {
-
+  line-height: 1.129em;
 }
 
 /*---------Footer---------*/
@@ -547,7 +605,7 @@ footer p {
       padding-left: 40px;
     }
 
-    .hero-area h1 {
+    .hero-area h2 {
       padding: 94px 169px 420px 0;
     }
 
@@ -572,15 +630,15 @@ footer p {
       width: 40%;
     }
 
-    .features h1 {
+    .features h2 {
       margin: 0;
     }
-    .form-description h3, .form h3 {
+    .form-description h5, .form h5 {
       margin: 0;
       padding: 0 0 20px 0;
     }
 
-    .reviews h3 {
+    .reviews h2 {
       padding: 90px 13.125rem 20px 0;
     }
 
@@ -636,7 +694,7 @@ footer p {
     padding: 0 4.75%;
   }
   
-  .mission-content h1 {
+  .mission-content h2 {
     width: 100%;
   }
   
@@ -664,7 +722,7 @@ footer p {
     width: 45%;
   }
 
-  .contact-about h4 {
+  .contact-about h5 {
     margin: 0 0 23px;
   }
 
@@ -697,7 +755,7 @@ aside .content-wrapper {
   padding: 105px 0 90px;
 }
 
-.features h1 {
+.features h2 {
   padding: 0 0 90px;
 }
 
@@ -705,7 +763,7 @@ aside .content-wrapper {
   justify-content: initial;
 }
 
-.reviews .content-wrapper h3 {
+.reviews .content-wrapper h2 {
   margin: 100px 0;
   padding: 0;
 }  
@@ -719,7 +777,7 @@ footer .content-wrapper {
   margin: 100px 0;
 }
 
-.mission-content h1 {
+.mission-content h2 {
   margin: 0 0 40px;
 }
 
