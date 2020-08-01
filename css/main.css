@@ -176,6 +176,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   margin: 0;
+  width: 100%
 }
 
 header figure {
@@ -194,6 +195,7 @@ header a {
 
 .header-divider {
   width: 100%;
+  border-top: 1px solid #3a3a3a;
 }
 
 header nav {
@@ -384,7 +386,7 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
-}
+
 
 .retreat-info {
 
@@ -686,6 +688,7 @@ footer p {
 
     header .content-wrapper {
       justify-content: space-between;      
+      width: 83.33%;
     }
 
     header figure {
@@ -946,7 +949,9 @@ footer p {
     
   }
 
-
+header .content-wrapper{
+  width: 80%;
+}
 .hero-area h1 {
   font-size: 3.75em;
   line-height: normal;
