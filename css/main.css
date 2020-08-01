@@ -318,13 +318,14 @@ input[type=button] {
   line-height: 1.129em;
 }
 
-.features figure {
-
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .features h2 {
   margin: 0;
-  padding: 54px 18px 54px 0;
+  padding: 38px 18px 78px 0;
   
 }
 
@@ -341,7 +342,7 @@ input[type=button] {
   align-items: center;
   justify-content: center;
   width: 55%;
-  padding: 25px 0;
+  padding-bottom: 40px;
 }
 
 .features-items .font-awesome-icon {
@@ -514,10 +515,14 @@ input[type=button] {
   line-height: 1.129em;
 }
 
-/*---------Footer---------*/
+/*---------Footer-----------------------------------------*/
+footer {
+  height: auto;
+}
+
 footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
+  width: 61.72%;
+  margin: 40px 0;
 }
 
 .footer-content {
@@ -530,6 +535,7 @@ footer .content-wrapper {
 
 footer h5 {
   margin: 0 0 20px;
+  width: 100%;
 }
 
 footer p {
@@ -538,6 +544,7 @@ footer p {
 
 .social {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
@@ -545,13 +552,24 @@ footer p {
 
 .social-icons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  
+  width: 100%;
+}
+
+.social-icons p {
+  font-size: 2.69em;
+}
+
+
+.social-icons i {
+  color: #527158;
 }
 
 .copyright {
   padding: 0 2em;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -737,22 +755,28 @@ footer p {
       height: 860px;
     }
     .features .content-wrapper{
-      width: 90%;
-     margin: 95px 0 90px;
+      width: 83.33%;
+     
     }
     
     .features h2 {
       margin: 0;
       font-size: 2.25em;
       line-height: 1.33em;
+      padding: 88px 0 36px 0px;
     }
     
     .features article {
-      width: 26%;
-      padding: 0 4rem;
+      width: 27%;
+      padding: 0 9% 46px;
       flex-basis: 1;
     }
   
+    .features i {
+      font-size: 4.5em;
+      margin-bottom: 28px;
+    }
+
     .reviews {
       height: 500px;
     }
@@ -787,23 +811,24 @@ footer p {
     }
 
 .reviews article {
-  width: 50%;
+  width: 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 2%;
 }
 
     .reviews figure {
-    width: 97%;
-    height: 200px;
+    width: 311px;
     
    }
 
     
-    footer {
-      height: 325px;
-    }
+   
 
     footer .content-wrapper {
-      width: 100%;
-      padding: 90px 0;
+      width: 68.23%;
+      padding: 86px 0;
       margin: 0;
       
     }
@@ -811,13 +836,13 @@ footer p {
     .footer-content {
       display: flex;
       flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: space-between;
+      align-items: flex-start;
       width: 100%;
     }
 
     footer address, footer .social {
-      width: 45%;
+      width: 38.93%;
       margin: 0;
     }
 
@@ -991,11 +1016,21 @@ input[type=button] {
 }
 
 .features .content-wrapper {
-  padding: 105px 0 90px;
+  width: 80%;
 }
 
 .features h2 {
-  padding: 0 0 90px;
+  line-height: normal;
+  padding: 98px 0 93px;
+}
+
+.features article {
+  width: 21%;
+  padding: 0 6.16% 58px;
+}
+
+.features i {
+  margin-bottom: 23px;
 }
 
 .reviews {
@@ -1036,12 +1071,15 @@ input[type=button] {
   line-height: normal;
 }
 
-footer {
-  height: 340px;
-}
+
 
 footer .content-wrapper {
   padding: 100px 0;
+  width: 70.67%;
+}
+
+footer address, footer .social {
+  width: 24.17%;
 }
 
 footer h5 {
