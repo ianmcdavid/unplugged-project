@@ -171,6 +171,7 @@ header nav ul li {
 
 .hero-area h1 {
   padding: 55px 22px;
+  margin: 0;
 }
 aside {
   display: flex;
@@ -208,11 +209,12 @@ aside input {
 .features {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   background:  <img src="" alt="blissful outdoors"/>
 }
 
 .features .content-wrapper {
-  
+ 
 }
 
 .features p {
@@ -254,10 +256,11 @@ aside input {
 .reviews {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .reviews .content-wrapper {
-  
+
 }
 
 .reviews h3{
@@ -288,7 +291,7 @@ aside input {
 
 /*---------Mobile Styles - About ---------*/
 .main-about {
-
+ justify-content: center;
 }
 
 .mission {
@@ -356,6 +359,7 @@ aside input {
 .faq {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .faq .content-wrapper {
@@ -366,7 +370,8 @@ aside input {
 }
 
 .faq h1 {
-  margin: 50px 0 50px 19px;
+  width: 100%;
+  margin: 50px 0;
 }
 
 .faq-content {
@@ -512,9 +517,185 @@ footer p {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+   @media only screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+    header {
+      justify-content: center;
+      padding: 0;
+    }
+
+    header .content-wrapper {
+      justify-content: space-between;
+      padding: 40px;
+    }
+
+    .header-divider {
+      width: 0;
+    }
+
+    header nav {
+      
+      justify-content: flex-end;
+    }
+
+    header nav ul {
+      justify-content: flex-end;
+    }
+
+    header nav ul li {
+      padding-left: 40px;
+    }
+
+    .hero-area h1 {
+      padding: 94px 169px 420px 65px;
+    }
+
+    aside .content-wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+            
+    }
+
+    .features .content-wrapper{
+      width: 100%;
+     padding: 95px 4.125rem 90px;
+    }
+    
+    .features article {
+      width: 26%;
+      padding: 0 4rem;
+      flex-basis: 1;
+    }
+    .form-description, .form {
+      width: 40%;
+    }
+
+    .form-description h3, .form h3 {
+      margin: 0;
+      padding: 0 0 20px 0;
+    }
+
+    .reviews h3 {
+      padding: 90px 13.125rem 20px 0;
+    }
+
+    .reviews .content-wrapper {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    }
+
+    .retreat-info, .reviews article {
+      width: 41%;
+    }
+
+    .reviews h5 {
+      margin: 0;
+    }
+
+    footer .content-wrapper {
+      width: 100%;
+      padding: 90px 0;
+      margin: 0;
+      
+    }
+
+    .footer-content {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+
+    footer address, footer .social {
+      width: 45%;
+      margin: 0;
+    }
+
+    footer h5 {
+      margin: 0;
+    }
+
+  /******** About *******/
+  .mission .content-wrapper {
+    width: 100%;
+    
+  }
+  .mission-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 0 4.75%;
+  }
+  
+  .mission-content h1 {
+    width: 100%;
+  }
+  
+  .mission-content p {
+  
+    width: 45%;
+
+  }
+  
+  .contact-section .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    
+  }
+  
+  .contact-section h2 {
+    width: 100%;
+    margin: 0 0 55px;
+  }
+  
+  .contact-about {
+    width: 45%;
+  }
+
+  .contact-about h4 {
+    margin: 0 0 23px;
+  }
+
+  .contact-about p {
+    margin: 0;
+  }
+  /********* FAQ ********/
+  .faq .content-wrapper {
+    justify-content: space-between;
 }
+
+.faq-content {
+    flex-basis: 40%;
+}
+
+.faq h2 {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+    }
+     
+    @media only screen and (min-width: 1200px) {
+    /*Desktop styles here*/
+    }
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
