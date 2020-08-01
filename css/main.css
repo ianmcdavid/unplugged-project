@@ -558,12 +558,19 @@ footer p {
 }
 
 .social-icons p {
-  font-size: 2.69em;
+  font-size: 1.125em;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #527158;
 }
 
 
 .social-icons i {
-  color: #527158;
+  color: #e2e3ed;
+  margin: 0;
+  padding-top: 11px;
 }
 
 .copyright {
