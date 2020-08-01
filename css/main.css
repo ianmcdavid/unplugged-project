@@ -106,40 +106,50 @@ header, footer {
   
 }
 
+.content-wrapper {
+  width: 89%;
+}
+
 /*----------Header---------*/
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  
+  margin: 0;
 }
 
 header a {
-  width: 100%;
+  
 }
 
-header .header-divider {
-
+.header-divider {
+  width: 100%;
 }
 
 header nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60%;
 }
 
 header nav ul{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style-type: none;
-
+  padding-left: 0;
+  width: 44%;
 }
 
 header nav ul li {
-  padding: 0 1em;
+  padding: 5px 0;
   
 }
 
@@ -160,7 +170,7 @@ header nav ul li {
 }
 
 .hero-area h1 {
-
+  padding: 55px 22px;
 }
 aside {
   display: flex;
@@ -170,15 +180,15 @@ aside {
 }
 
 .form-description {
- 
+
 }
 
 aside h3 {
-
+  padding-top: 30px;
 }
 
 aside p{
-
+  margin: 0;
 }
 
 .form {
@@ -188,6 +198,9 @@ aside p{
   justify-content: center;
 }
 
+.form h3{
+  margin: 9px 0;
+}
 aside input {
 
 }
@@ -202,12 +215,17 @@ aside input {
   
 }
 
+.features p {
+  margin: 0;
+}
+
 .features figure {
 
 }
 
 .features h1 {
-
+  margin: 0;
+  padding: 54px 19px;
 }
 
 .features-items {
@@ -222,6 +240,8 @@ aside input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 55%;
+  padding: 25px 0;
 }
 
 .features-items .font-awesome-icon {
@@ -241,7 +261,9 @@ aside input {
 }
 
 .reviews h3{
-
+  margin: 0;
+  padding-top: 50px;
+  width: 81%;
 }
 
 .reviews article {
@@ -281,7 +303,7 @@ aside input {
 }
 
 .mission-content {
- 
+  margin: 50px 0;
 }
 
 .mission-content h1 {
@@ -289,7 +311,7 @@ aside input {
 }
 
 .mission-content p {
-
+  margin-top: 20px;
 }
 
 .map {
@@ -308,10 +330,10 @@ aside input {
 }
 
 .contact-section .content-wrapper {
-  
+  margin: 50px 0;
 }
 .contact-section h2 {
-
+  margin: 0;
 }
 
 .contact-about {
@@ -344,11 +366,11 @@ aside input {
 }
 
 .faq h1 {
-
+  margin: 50px 0 50px 19px;
 }
 
 .faq-content {
-
+  margin: 0 0 50px 19px;
 }
 
 .faq-content h3 {
@@ -361,7 +383,8 @@ aside input {
 
 /*---------Footer---------*/
 footer .content-wrapper {
-  
+  width: 55%;
+  margin: 50px 0;
 }
 
 .footer-content {
@@ -372,11 +395,15 @@ footer .content-wrapper {
 
 }
 
+footer p {
+  margin: 0;
+}
+
 .social {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  margin-top: 50px;
 }
 
 .social-icons {
