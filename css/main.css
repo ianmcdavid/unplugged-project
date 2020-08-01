@@ -107,7 +107,7 @@ header, footer {
 }
 
 .content-wrapper {
-  width: 89%;
+  width: 90%;
 }
 
 /*----------Header---------*/
@@ -161,7 +161,7 @@ header nav ul li {
 
 .hero-area {
   display: flex;
-  
+  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -227,7 +227,7 @@ aside input {
 
 .features h1 {
   margin: 0;
-  padding: 54px 19px;
+  padding: 54px 0;
 }
 
 .features-items {
@@ -548,19 +548,19 @@ footer p {
     }
 
     .hero-area h1 {
-      padding: 94px 169px 420px 65px;
+      padding: 94px 169px 420px 0;
     }
 
     aside .content-wrapper {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
             
     }
 
     .features .content-wrapper{
-      width: 100%;
-     padding: 95px 4.125rem 90px;
+      width: 90%;
+     margin: 95px 0 90px;
     }
     
     .features article {
@@ -572,6 +572,9 @@ footer p {
       width: 40%;
     }
 
+    .features h1 {
+      margin: 0;
+    }
     .form-description h3, .form h3 {
       margin: 0;
       padding: 0 0 20px 0;
@@ -681,21 +684,55 @@ footer p {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-    }
+}
      
     @media only screen and (min-width: 1200px) {
     /*Desktop styles here*/
-    }
+  
+aside .content-wrapper {
+  width: 73%;
+}
+
+.features .content-wrapper {
+  padding: 105px 0 90px;
+}
+
+.features h1 {
+  padding: 0 0 90px;
+}
+
+.reviews .content-wrapper {
+  justify-content: initial;
+}
+
+.reviews .content-wrapper h3 {
+  margin: 100px 0;
+  padding: 0;
+}  
+
+footer .content-wrapper {
+  padding: 100px 0;
+}
+
+/********** About Desktop Styles *********/
+.mission-content {
+  margin: 100px 0;
+}
+
+.mission-content h1 {
+  margin: 0 0 40px;
+}
+
+/********** FAQ Desktop Styles ************/
+.faq .content-wrapper {
+  margin: 50px 0;
+}
+
+
+
+
+
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
