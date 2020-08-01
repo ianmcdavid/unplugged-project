@@ -140,11 +140,11 @@ textarea {
   }
    
   img {
-   
+   width: 100%;
   }
    
   figure {
-   
+   margin: 0;
   }
    
   address {
@@ -178,6 +178,16 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  height: 42px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+
 header a {
   text-transform: uppercase;
 }
@@ -200,7 +210,7 @@ header nav ul{
   align-items: center;
   list-style-type: none;
   padding-left: 0;
-  width: 44%;
+  width: 88%;
 }
 
 header nav ul li {
@@ -218,6 +228,9 @@ header nav ul li {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/hero.jpg') center no-repeat;
+  background-size: cover;
+  height: 500px;
 }
 
 .hero-area .content-wrapper {
@@ -225,14 +238,17 @@ header nav ul li {
 }
 
 .hero-area h1 {
-  padding: 55px 0;
+  padding: 48px 0 0;
   margin: 0;
   
 }
+
+
+
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   flex-flow: row wrap;
   background: #527158;
 }
@@ -254,7 +270,7 @@ aside p{
 .form {
   display: flex;
   flex-flow: column wrap;
-  margin-top: 30px;
+  margin: 30px 0 50px;
   justify-content: center;
 }
 
@@ -288,7 +304,9 @@ input[type=button] {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background:  <img src="" alt="blissful outdoors"/>
+  
+  background: url('../img/features.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .features .content-wrapper {
@@ -350,7 +368,7 @@ input[type=button] {
 
 .reviews h5{
   margin: 0;
-  padding-top: 50px;
+  padding-top: 20px;
   width: 81%;
 }
 
@@ -359,7 +377,12 @@ input[type=button] {
 }
 
 .reviews figure {
-
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 }
 
 .retreat-info {
@@ -372,6 +395,7 @@ input[type=button] {
 
 .retreat-info p {
   line-height: 1.129em;
+  margin-bottom: 45px;
 }
 
 /*---------Mobile Styles - About ---------*/
@@ -614,22 +638,32 @@ footer p {
    ========================================================================== */
 
    @media only screen and (min-width: 768px) {
-    /*Tablet styles here*/
+    /*Tablet styles here************************************************************************************************************/
 
     header {
       justify-content: center;
       padding: 0;
+      height: 100px;
+    
     }
 
     header .content-wrapper {
-      justify-content: space-between;
-      padding: 40px;
+      justify-content: space-between;      
+    }
+
+    header figure {
+      width: 28.78%;
+    }
+
+    nav ul li {
+      font-size: 1em;
     }
 
     .header-divider {
       width: 0;
     }
 
+    
     header nav {
       
       justify-content: flex-end;
@@ -643,20 +677,62 @@ footer p {
       padding-left: 40px;
     }
 
-    .hero-area h2 {
-      padding: 94px 169px 420px 0;
+    .hero-area {
+      height: 600px;
+    }
+
+    .hero-area h1 {
+      padding: 94px 100px 420px 0;
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    aside {
+      height: 240px;
     }
 
     aside .content-wrapper {
       display: flex;
       justify-content: space-between;
-      align-items: center;
-            
+
+    }
+    
+    .form-description h5, .form h5 {
+      margin: 0;
+      padding: 0 0 20px 0;
+      font-size: 1.5em;
+      line-height: 1.25em;
     }
 
+    .form-description, .form {
+      width: 40%;
+      margin-top: 50px;
+    }
+
+    input[type=text] {
+      font-size: .875em;
+      padding: .8125em;
+      line-height: 1em;
+    }
+
+    input[type=button] {
+      line-height: 1em;
+      padding: 11px 0;
+    }
+    
+    
+    .features {
+      height: 860px;
+    }
     .features .content-wrapper{
       width: 90%;
      margin: 95px 0 90px;
+    }
+    
+    .features h2 {
+      margin: 0;
+      font-size: 2.25em;
+      line-height: 1.33em;
     }
     
     .features article {
@@ -664,34 +740,53 @@ footer p {
       padding: 0 4rem;
       flex-basis: 1;
     }
-    .form-description, .form {
-      width: 40%;
-    }
-
-    .features h2 {
-      margin: 0;
-    }
-    .form-description h5, .form h5 {
-      margin: 0;
-      padding: 0 0 20px 0;
+  
+    .reviews {
+      height: 500px;
     }
 
     .reviews h2 {
-      padding: 90px 13.125rem 20px 0;
+      margin: 105px 13.125rem 20px 0;
+      font-size: 2.25em;
+      line-height: normal;
     }
 
     .reviews .content-wrapper {
+      width: 83.33%;
       display: flex;
       flex-flow: row wrap;
-      justify-content: center;
+      justify-content: flex-start;
     }
 
-    .retreat-info, .reviews article {
-      width: 41%;
-    }
-
-    .reviews h5 {
+    .retreat-info h5 {
+      font-size: 1.5em;
+      line-height: 1.25em;
+      padding: 0 0 0 6px;
       margin: 0;
+    }
+
+    .retreat-info p {
+      padding: 0 0 0 6px;
+      margin-right: -6px;
+    }
+     .retreat-info {
+      width: 50%;
+      
+    }
+
+.reviews article {
+  width: 50%;
+}
+
+    .reviews figure {
+    width: 97%;
+    height: 200px;
+    
+   }
+
+    
+    footer {
+      height: 325px;
     }
 
     footer .content-wrapper {
@@ -716,13 +811,16 @@ footer p {
 
     footer h5 {
       margin: 0;
+      font-size: 1.5em;
+      line-height: normal;
+      padding-bottom: 40px;
     }
 
   /******** About *******/
   .mission .content-wrapper {
     width: 100%;
-    
   }
+  
   .mission-content {
     display: flex;
     flex-flow: row wrap;
@@ -734,10 +832,11 @@ footer p {
   
   .mission-content h2 {
     width: 100%;
+    font-size: 2.25em;
   }
   
   .mission-content p {
-  
+    line-height: 1.29em;
     width: 45%;
 
   }
@@ -754,6 +853,8 @@ footer p {
   .contact-section h2 {
     width: 100%;
     margin: 0 0 55px;
+    font-size: 2.25em;
+    line-height: 1.33em;
   }
   
   .contact-about {
@@ -762,6 +863,7 @@ footer p {
 
   .contact-about h5 {
     margin: 0 0 23px;
+    font-size: 1.5em;
   }
 
   .contact-about p {
@@ -773,20 +875,103 @@ footer p {
 }
 
 .faq-content {
-    flex-basis: 40%;
+    flex-basis: 45%;
 }
 
 .faq h2 {
     width: 100%;
+    font-size: 2.25em;
+    line-height: 1.33em;
+}
+
+.faq-content h5 {
+  font-size: .875em;
+  line-height: 1.29em;
 }
 
 }
      
-    @media only screen and (min-width: 1200px) {
-    /*Desktop styles here*/
-  
+@media only screen and (min-width: 1200px) {
+/*Desktop styles here**********************************************************************/
+.content-wrapper {
+  width: 80%;
+    
+  }
+
+
+.hero-area h1 {
+  font-size: 3.75em;
+  line-height: normal;
+  padding: 35px 260px 0 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 1.875em;
+  line-height: normal;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.33em;
+}
+
+header ul li {
+  font-size: 1.125em;
+  line-height: normal;
+}
+
+header figure{
+   width: 23.67%;
+    
+}
+ 
+
+    
+aside {
+  height: 260px;
+}
+
 aside .content-wrapper {
-  width: 73%;
+  width: 67%;
+  
+  
+}
+
+.form-description, .form {
+  margin: 0;
+  justify-content: flex-start;
+  width: 40%;
+  
+}
+
+.form h5, .form-description h5 {
+  padding: 38px 0 14px 0;
+  font-size: 1.875em;
+  line-height: 1.2em;
+}
+
+.form-description p {
+  padding: 0 20px 0 0;
+}
+
+input[type=text] {
+  font-size: 1.125em;
+  line-height: 1.2em;
+  padding: .695em;
+}
+
+input[type=button] {
+  font-size: 1.5em;
+  line-height: 1.2em;
+}
+
+.features {
+  height: 810px;
 }
 
 .features .content-wrapper {
@@ -797,46 +982,133 @@ aside .content-wrapper {
   padding: 0 0 90px;
 }
 
+.reviews {
+  height: 630px;
+}
+
 .reviews .content-wrapper {
-  justify-content: initial;
+  justify-content: flex-start;
+  
 }
 
 .reviews .content-wrapper h2 {
-  margin: 100px 0;
+  margin: 95px 0px -10px 0;
   padding: 0;
+ 
 }  
+
+.reviews article {
+  padding: 0;
+  width: 46.7%;
+}
+
+
+
+.reviews figure {
+  width: 460px;
+  height: 300px;
+  padding-right: 19px;
+}
+
+.retreat-info {
+  padding: 0 0 0 45px;
+  width: 43.75%;
+}
+
+.retreat-info h5 {
+  font-size: 1.875em;
+  line-height: normal;
+}
+
+footer {
+  height: 340px;
+}
 
 footer .content-wrapper {
   padding: 100px 0;
 }
 
+footer h5 {
+  font-size: 1.875em;
+  line-height: normal;
+}
+
 /********** About Desktop Styles *********/
+.mission {
+  height: 444px;
+}
+
+.mission .content-wrapper {
+  width: 80%;
+}
+
 .mission-content {
-  margin: 100px 0;
+  margin: 90px 0;
+  padding: 0;
 }
 
 .mission-content h2 {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
+  font-size: 3em;
+  line-height: normal;
+  
 }
 
+.mission-content p {
+  font-size: 1.125em;
+  line-height: 1.33em;
+  margin: 0;
+
+}
+
+.contact-section {
+  height: 400px;
+  align-items: flex-start;
+}
+
+.contact-section .content-wrapper {
+  margin: 88px 0 0 0;
+}
+
+.contact-section h2 {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 0 0 22px;
+}
+
+.contact-section h5 {
+  font-size: 1.875em;
+  line-height: normal;
+}
+
+.contact-about p {
+  font-size: 1.125em;
+  line-height: normal;
+}
 /********** FAQ Desktop Styles ************/
 .faq .content-wrapper {
   margin: 50px 0;
 }
 
-
-
-
-
+.faq h5, .faq p {
+  font-size: 1.125em;
+  line-height: 1em;
 }
 
-@media print,
+.faq h2 {
+  font-size: 3em;
+  line-height: normal;
+}
+}
+
+
+@media print, 
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
-}
 
+  }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
