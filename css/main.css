@@ -97,6 +97,304 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*--------- Base Styles Header and Footer -------------*/
+header, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  
+}
+
+/*----------Header---------*/
+header .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+header a {
+  width: 100%;
+}
+
+header .header-divider {
+
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+
+}
+
+header nav ul li {
+  padding: 0 1em;
+  
+}
+
+
+/*-------------Mobile Styles - Homepage --------------*/
+.main-homepage {
+
+}
+
+.hero-area {
+  display: flex;
+  
+  flex-flow: row wrap;
+}
+
+.hero-area .content-wrapper {
+  
+}
+
+.hero-area h1 {
+
+}
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.form-description {
+ 
+}
+
+aside h3 {
+
+}
+
+aside p{
+
+}
+
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  
+  justify-content: center;
+}
+
+aside input {
+
+}
+
+.features {
+  display: flex;
+  flex-flow: row wrap;
+  background:  <img src="" alt="blissful outdoors"/>
+}
+
+.features .content-wrapper {
+  
+}
+
+.features figure {
+
+}
+
+.features h1 {
+
+}
+
+.features-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features-items article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-items .font-awesome-icon {
+
+}
+.features-items .features-item-description {
+  text-align: center;
+}
+
+.reviews {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.reviews .content-wrapper {
+  
+}
+
+.reviews h3{
+
+}
+
+.reviews article {
+
+}
+
+.reviews figure {
+
+}
+
+.retreat-info {
+
+}
+
+.retreat-info h5 {
+
+}
+
+.retreat-info p {
+
+}
+
+/*---------Mobile Styles - About ---------*/
+.main-about {
+
+}
+
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.mission .content-wrapper {
+  
+}
+
+.mission-content {
+ 
+}
+
+.mission-content h1 {
+
+}
+
+.mission-content p {
+
+}
+
+.map {
+  
+}
+
+.map figure {
+
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-section .content-wrapper {
+  
+}
+.contact-section h2 {
+
+}
+
+.contact-about {
+
+}
+
+.contact-about h4 {
+
+}
+
+.contact-about address {
+
+}
+
+.contact-about p {
+
+}
+
+/*---------- Mobile Styles - FAQ ----------*/
+.faq {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.faq .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.faq h1 {
+
+}
+
+.faq-content {
+
+}
+
+.faq-content h3 {
+
+}
+
+.faq-content p {
+
+}
+
+/*---------Footer---------*/
+footer .content-wrapper {
+  
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content .contact {
+
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.copyright {
+  padding: 0 2em;
+}
+
+
+
+
+
+
 
 /* ==========================================================================
    Helper classes
